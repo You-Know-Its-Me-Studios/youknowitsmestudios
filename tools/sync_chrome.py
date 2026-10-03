@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EMAIL = 'mailto:youknowitsmestudios@gmail.com'
 
 def identity(base):
-    return f'<a class="wordmark" href="{base}" aria-label="You Know Its Me Studios home"><img src="{base}assets/favicon.svg" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>'
+    return f'<a class="wordmark" href="{base}" aria-label="You Know Its Me Studios home"><img src="{base}assets/studio-logo.png" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>'
 
 def header(base, route):
     links = [('Projects', '#projects'), ('Strata', 'strata/'), ('Body Hub', 'bodyhub/'), ('About', '#about')]
