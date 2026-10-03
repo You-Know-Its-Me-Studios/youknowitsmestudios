@@ -326,7 +326,7 @@ section[id],div[id] {
   line-height:1.6;
   letter-spacing:.2px;
   max-width:515px;
-  margin-bottom:16px;
+  margin-bottom:0;
 }
 .hero__art {
   position:absolute;
@@ -1307,7 +1307,7 @@ section[id],div[id] {
   .hero__lede {
     font-size:14px;
     line-height:1.8;
-    margin:17px 0 22px;
+    margin:17px 0 0;
     max-width:440px;
   }
   .button-row {
