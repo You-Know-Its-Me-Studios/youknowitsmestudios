@@ -118,6 +118,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
 section[id],div[id] {
   scroll-margin-top:24px;
 }
+#projects,#about {
+  scroll-margin-top:96px;
+}
 /* Header and footer are static HTML, maintained with tools/sync_chrome.py. */
 .site-header {
   border-bottom:1px solid #101d24;
@@ -173,6 +176,7 @@ section[id],div[id] {
   color:#64edf0;
 }
 .menu-toggle {
+  display:none;
   border:1px solid var(--border);
   background:var(--panel);
   border-radius:6px;
@@ -1085,7 +1089,7 @@ section[id],div[id] {
     letter-spacing:1.5px;
     gap:10px;
   }
-  .js .menu-toggle {
+  .js .menu-toggle:not([hidden]) {
     display:block;
   }
   .site-nav {

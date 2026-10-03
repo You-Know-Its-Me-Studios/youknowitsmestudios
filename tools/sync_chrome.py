@@ -32,7 +32,8 @@ def sync():
         text = page.read_text(encoding='utf-8')
         text = re.sub(r'<header class="site-header".*?</header>', lambda _: header(base, route), text, flags=re.S)
         text = re.sub(r'<footer class="site-footer".*?</footer>', lambda _: footer(base), text, flags=re.S)
-        text = re.sub(r'styles.css\?v=[^"\s]+', 'styles.css?v=20261003-3', text)
+        text = re.sub(r'styles.css\?v=[^"\s]+', 'styles.css?v=20261003-4', text)
+        text = re.sub(r'script.js(?:\?v=[^"\s]+)?', 'script.js?v=20261003-4', text)
         text = text.replace('content="#090b0d"', 'content="#080e12"')
         if route.startswith('bodyhub/'):
             text = text.replace('<body>', '<body class="theme-bodyhub">')
