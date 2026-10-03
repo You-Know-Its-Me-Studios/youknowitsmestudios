@@ -30,4 +30,4 @@ The homepage verification meta tag, `.nojekyll`, and existing deployment configu
 
 Strata icon and screenshots were unavailable and omitted at the owner's direction. Its presentation uses text rather than invented app imagery. Add approved assets when available.
 
-The existing Body Hub support, privacy and terms pages describe on-device AI, and the privacy page describes optional Health Connect background refresh. These existing statements were preserved verbatim, not validated as release commitments during this visual redesign. Confirm them against the intended release separately. Product marketing does not advertise smart/background AI features.
+Body Hub resource copy was reconciled with the 0.10 Android implementation. Personal insights, independent background preferences, optional digests and cache deletion are documented. The approved layout, navigation and removed homepage hero/menu controls are preserved. No local preview, browser session or website screenshot session was run during this copy pass.

@@ -9,6 +9,7 @@
 <a href="#data">Information and purposes</a>
 <a href="#local">Processing and storage</a>
 <a href="#ai">On-device AI</a>
+<a href="#insights">Personal insights</a>
 <a href="#health-connect">Health Connect and phone steps</a>
 <a href="#images">Camera, photos, and body scans</a>
 <a href="#voice">Microphone and voice providers</a>
@@ -43,7 +44,7 @@
 </li>
 <li><strong>Medication information:</strong> entered medication schedules, doses logged, supply and refill information, and reminder choices. The app uses these to organize your records and schedule reminders, not to prescribe or determine a dose.
 </li>
-<li><strong>Images and scan data:</strong> selected or captured images for meal, recipe, nutrition-label, scale-reading, or profile features; saved experimental body surfaces, reference outlines, and camera-setup details. Their different storage rules are explained below.
+<li><strong>Images and scan data:</strong> selected or captured images for meal, recipe, nutrition-label, scale-reading, or profile features; saved body surfaces, reference outlines, and camera-setup details. Their different storage rules are explained below.
 </li>
 <li><strong>AI input and output:</strong> your questions, selected images, relevant saved records and profile information, answers, summaries, and editable drafts. These are processed to answer the request you make.
 </li>
@@ -66,12 +67,19 @@
 <section id="ai">
 <h2>On-device AI
 </h2>
-<p>Text and image inference runs locally using installed Qwen model files and the llama.cpp runtime. Body Hub does not send prompts, selected records, images, or results to a hosted AI service, and it has no remote inference fallback. The model processes the records and profile context supplied for the feature you request.
+<p>Text and image assistance runs locally on your device. Body Hub does not send prompts, selected records, images, or results to a hosted AI service, and it has no remote inference fallback. The model processes the records and profile context supplied for the feature you request.
 </p>
 <p>AI conversations and unsaved results are held in memory rather than saved as a chat archive. Leaving the assistant or backgrounding the app triggers cancellation and cleanup; local timing information is retained to estimate progress. A result becomes part of your saved records only when you review and save its draft. A summary you export becomes a separate file.
 </p>
 <p>Model files are supplied through Google Play install-time packs. Installation and updates require the relevant Play services and may require a connection and substantial device storage. Having a local model does not establish that separate voice or platform services have the same privacy practices.
 </p>
+</section>
+<section id="insights">
+<h2>Personal insights and background analysis</h2>
+<p>Premium personal insights use relevant saved records, goals and preferences to identify recorded patterns. Calculations and record selection happen on the device. Optional local AI helps explain the selected evidence. Associations are not causes, missing logs are not zero, and proposed target or workout changes require your review before saving.</p>
+<p>Insights, evidence references, dismissal and snooze choices are stored encrypted locally. Editing or deleting supporting records invalidates cached findings. This does not create a persistent conversation archive. Deleting all app data removes these caches and choices.</p>
+<p>Background Intelligence can be turned off in Settings. Charging-only and Wi-Fi-only are independent preferences, both on by default; when both are on, both are required. Wi-Fi is a scheduling preference and does not authorize health-data uploads. Android determines when eligible background work runs. Your direct Ask requests and core tracking operate independently.</p>
+<p>Insight notifications are off by default. You may choose a daily or weekly digest, with at most one useful insight notification per day and no health details on the lock screen. Quiet hours, dismissed or snoozed findings, and already-viewed insights are respected. Medication reminders and active workout timers remain separate.</p>
 </section>
 <section id="health-connect">
 <h2>Health Connect and phone steps
@@ -96,7 +104,7 @@
 </p>
 <p><strong>Retained photos:</strong> a meal or recipe image is kept locally only when you choose to keep or attach it and save the record. An optional profile picture is cropped and retained when you choose <strong>Use Picture</strong>. These are encrypted copies in the local store. Removing an app copy does not delete the original in a gallery or file provider.
 </p>
-<p><strong>Derived scan information:</strong> choosing <strong>Save Experimental Surface</strong> retains body-surface geometry, a featureless front reference outline, and setup information such as entered height, camera configuration, and orientation. These are body-related personal data, not anonymous data. Later saved scans can carry a copy of the reference outline. Deleting one scan does not erase outline copies in other scans. Accurate circumference reconstruction and posture accuracy have not been established.
+<p><strong>Derived scan information:</strong> choosing <strong>Save Body Shape</strong> retains body-surface geometry, a featureless front reference outline, and setup information such as entered height, camera configuration, and orientation. These are body-related personal data, not anonymous data. Later saved scans can carry a copy of the reference outline. Deleting one scan does not erase outline copies in other scans.
 </p>
 </section>
 <section id="voice">
