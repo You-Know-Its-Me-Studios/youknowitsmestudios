@@ -49,7 +49,7 @@
 </li>
 <li><strong>Operational information:</strong> settings, earned achievements and dates, reminder identifiers and due times, local AI timing estimates, Health Connect source identifiers and synchronization tokens, and phone-step tracking state. These support the relevant app features.
 </li>
-<li><strong>Purchase information, when purchasing is available:</strong> Google Play product and purchase information, purchase tokens and signatures used to check and acknowledge purchases, and a local Premium status and last-check time. These are used for access and restoration.
+<li><strong>Purchase information:</strong> Google Play product and purchase information, purchase tokens and signatures used to check and acknowledge purchases, and a local Premium status and last-check time. These are used for access and restoration.
 </li>
 </ul>
 </section>
@@ -115,7 +115,7 @@
 <ul>
 <li><strong>Open Food Facts:</strong> when you explicitly search for a food or barcode, Body Hub sends the entered search text or barcode over HTTPS to <code>world.openfoodfacts.org</code>. The request includes a Body Hub/Android user-agent; the service also receives network information such as your IP address. Body Hub does not attach your health history, profile, or image to that request and does not fetch product photos. Selected product information can be saved in your local food record. See <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy information</a>.
 </li>
-<li><strong>Google Play:</strong> Play distributes the app and its AI model packs and handles purchase and entitlement requests when subscriptions are enabled. Pack/app identifiers, delivery status, and necessary app, device, and network information are handled for distribution; these requests do not include your AI prompts or health records. For purchases, Play handles your Google account, payment and transaction information. Body Hub uses returned product and purchase details to check access and sends purchase tokens to Play to acknowledge eligible purchases. It does not receive your full payment-card details or send your health records with billing requests. Purchasing is not enabled in the current app configuration. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+<li><strong>Google Play:</strong> Play distributes the app and its AI model packs and handles purchase and entitlement requests. Pack/app identifiers, delivery status, and necessary app, device, and network information are handled for distribution; these requests do not include your AI prompts or health records. For purchases, Play handles your Google account, payment and transaction information. Body Hub uses returned product and purchase details to check access and sends purchase tokens to Play to acknowledge eligible purchases. It does not receive your full payment-card details or send your health records with billing requests. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
 </li>
 <li><strong>Android and chosen providers:</strong> Health Connect, recognition, text-to-speech, document providers, and apps you choose for sharing process the information described in their respective sections. Body Hub has no direct proprietary Samsung Health or Google Fit connection; those apps must share supported data through Health Connect.
 </li>
@@ -142,7 +142,7 @@
 </p>
 <p><strong>Delete All Body Hub Data</strong> erases the local records, revisions, stored documents including profile/photos/outlines/achievements and entitlement cache, clears preferences and encryption keys, cancels scheduled work, and asks Android to clear the app’s remaining data. Installed app/model packages remain until uninstalling. An active Play subscription, Play transaction records, Health Connect records, exports, and support correspondence are separate.
 </p>
-<p>When enabled, the local entitlement cache contains Premium status and its last verification time. Access requires rechecking after up to seven days; the cached record itself remains until replaced or app data is cleared. Google controls retention of its purchase and account records. Body Hub does not maintain a remote entitlement account in the current implementation.
+<p>The local entitlement cache contains Premium status and its last verification time. Access requires rechecking after up to seven days; the cached record itself remains until replaced or app data is cleared. Google controls retention of its purchase and account records. Body Hub does not maintain a remote entitlement account.
 </p>
 <p>Support messages and attachments are deleted within 90 days after the issue is resolved. Information needed for an ongoing dispute or legal obligation may be retained for that purpose and is deleted when no longer needed. You can email the support/privacy contact to request deletion of correspondence; any information that must remain for those purposes is subject to the same limits.
 </p>
@@ -174,7 +174,7 @@
 </p>
 <p>Google Play assigns <a href="support.html#content-ratings">regional content ratings</a>. Those ratings are separate from Body Hub’s intended audience and minimum age of 13; they do not set a universal minimum age for the app or establish that every health feature is suitable for minors.
 </p>
-<p>Body Hub’s birth-date field is used for calculations; it is not an online age-verification process. The app does not currently enforce an app-wide age gate. The calorie estimator withholds estimates outside its supported age range of 18–100 and also applies other eligibility checks. That calculation limit is not an app-wide access restriction or a suitability assessment of other features.
+<p>Body Hub’s birth-date field is used for calculations; it is not an online age-verification process. The app does not enforce an app-wide age gate. The calorie estimator withholds estimates outside its supported age range of 18–100 and also applies other eligibility checks. That calculation limit is not an app-wide access restriction or a suitability assessment of other features.
 </p>
 <p>If a child under 13 has used the app, stop that use and remove the local data with the <a href="data-deletion.html">deletion controls</a>. If information about a child was sent to support, contact us to request its deletion without resending sensitive details. We cannot identify or remotely erase information held only on a phone.
 </p>
