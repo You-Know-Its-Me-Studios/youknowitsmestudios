@@ -2345,3 +2345,11 @@ section[id] {
     padding-block: 3.5rem;
   }
 }
+
+/* Body Hub in the studio app collection */
+.bodyhub-card { margin-top: 2rem; }
+.bodyhub-card__resources { padding: clamp(1.5rem, 4vw, 4rem); background: linear-gradient(145deg, #1d1629, #101217); display: flex; flex-direction: column; justify-content: center; }
+.bodyhub-card__resources h4 { margin: 0 0 1.5rem; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; letter-spacing: -.045em; }
+.bodyhub-card__resources > p:not(.eyebrow) { color: var(--muted); margin-bottom: 2rem; line-height: 1.6; }
+.bodyhub-card__resources > a { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--border); text-decoration: none; }
+.bodyhub-card__resources > a:hover { color: var(--accent); }
