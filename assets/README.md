@@ -1,8 +1,8 @@
 # Asset provenance
 
 - `mountain-valley.webp`: artwork-only crop of the owner-supplied approved mockup (`codex-clipboard-M4Ldha.png`, 1672 × 941). Crop: left 780, top 78, right 1380, bottom 451. Excludes interface text, icons and product cards. The orbital outline is part of the supplied artwork; the hero headline and annotations are HTML. WebP quality 94.
-- `favicon.svg`: existing cyan browser favicon.
-- `studio-logo.png`: unchanged copy of the owner-supplied `C:/Users/Josh/Desktop/You Know Its Me Studios/Images/YKIM Studios.png`, used as the studio mark in the shared header and footer. The original file remains in place.
+- `favicon.svg`: legacy cyan mark, retained but no longer referenced by the website.
+- `studio-logo.png`: unchanged copy of the owner-supplied `C:/Users/Josh/Desktop/You Know Its Me Studios/Images/YKIM Studios.png`, used as the browser tab icon and studio mark in the shared header and footer. The original file remains in place.
 - `bodyhub-icon.svg`: exact path/fill conversion from `BodyHub/app/src/main/res/drawable/ic_bodyhub.xml`, without redesigning the actual app icon.
 - `bodyhub-today.webp`: `BodyHub/artifacts/play-store/review/today-overview.png`.
 - `bodyhub-workout.webp`: `BodyHub/artifacts/play-store/review/workout-edit.png`.

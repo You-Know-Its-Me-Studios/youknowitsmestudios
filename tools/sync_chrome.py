@@ -30,6 +30,7 @@ def sync():
         route = page.relative_to(ROOT).as_posix()
         base = '../' * (len(Path(route).parts) - 1) or './'
         text = page.read_text(encoding='utf-8')
+        text = re.sub(r'<link\b[^>]*\brel="icon"[^>]*>', lambda _: f'<link rel="icon" href="{base}assets/studio-logo.png" type="image/png">', text)
         text = re.sub(r'<header class="site-header".*?</header>', lambda _: header(base, route), text, flags=re.S)
         text = re.sub(r'<footer class="site-footer".*?</footer>', lambda _: footer(base), text, flags=re.S)
         text = re.sub(r'styles.css\?v=[^"\s]+', 'styles.css?v=20261003-4', text)
