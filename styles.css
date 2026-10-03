@@ -889,7 +889,7 @@ select {
 
 .site-footer__links {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-5);
 }
 
@@ -2348,8 +2348,25 @@ section[id] {
 
 /* Body Hub in the studio app collection */
 .bodyhub-card { margin-top: 2rem; }
-.bodyhub-card__resources { padding: clamp(1.5rem, 4vw, 4rem); background: linear-gradient(145deg, #1d1629, #101217); display: flex; flex-direction: column; justify-content: center; }
+.bodyhub-card__resources { padding: clamp(1.5rem, 4vw, 4rem); background: var(--surface-soft); display: flex; flex-direction: column; justify-content: center; }
 .bodyhub-card__resources h4 { margin: 0 0 1.5rem; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; letter-spacing: -.045em; }
 .bodyhub-card__resources > p:not(.eyebrow) { color: var(--muted); margin-bottom: 2rem; line-height: 1.6; }
 .bodyhub-card__resources > a { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--border); text-decoration: none; }
 .bodyhub-card__resources > a:hover { color: var(--accent); }
+
+/* Shared document components used by product policies and support. */
+.legal-copy { overflow-wrap: anywhere; min-width: 0; }
+.legal-copy section { scroll-margin-top: 7rem; }
+.legal-copy h3 { margin-top: 2rem; font-size: 1.35rem; }
+.legal-copy ol { padding-left: 1.3rem; }
+.legal-copy ol li { margin-block: .7rem; }
+.legal-copy .callout { padding: 1.25rem 1.5rem; border-left: 2px solid var(--accent); background: var(--surface); }
+.legal-copy .steps { font-weight: 600; color: var(--text); }
+.legal-toc__product { margin-top: 2rem !important; }
+.legal-copy .ratings { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: .88rem; margin-block: 2rem; }
+.legal-copy .ratings caption { text-align: left; padding-bottom: 1rem; color: var(--muted); }
+.legal-copy .ratings th, .legal-copy .ratings td { text-align: left; vertical-align: top; padding: .8rem .5rem; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.legal-copy .ratings thead { background: var(--surface); color: var(--accent); }
+.legal-copy .ratings td { color: var(--muted); }
+@media (max-width: 600px) { .legal-copy .ratings { font-size: .75rem; } .legal-copy .ratings th, .legal-copy .ratings td { padding: .65rem .3rem; } }
+@media print { .site-header, .site-footer, .legal-toc, .skip-link { display: none; } .legal-layout, .legal-hero { display: block; padding: 1rem 0; } .legal-copy, .shell { max-width: none; width: 100%; } }
