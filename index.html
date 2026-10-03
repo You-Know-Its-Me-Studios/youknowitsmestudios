@@ -5,194 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="4R4cerbUJGFpOKjUoRW-4Jpmn5m5QRYNYED318s_ZWQ" />
     <meta name="description" content="You Know Its Me Studios builds focused software, interactive tools, and digital products. Explore Strata and Body Hub for Android.">
-    <meta name="theme-color" content="#090b0d">
+    <meta name="theme-color" content="#080e12">
     <meta property="og:title" content="You Know Its Me Studios">
     <meta property="og:description" content="A software and interactive product studio. Explore Strata, a customizable Android launcher, and Body Hub for fitness and general wellness.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://you-know-its-me-studios.github.io/youknowitsmestudios/">
     <title>You Know Its Me Studios</title>
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="./styles.css?v=20261003-2">
+    <link rel="stylesheet" href="./styles.css?v=20261003-3">
     <script src="./script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header" data-header>
-<div class="shell site-header__inner">
-<a class="wordmark" href="./" aria-label="You Know Its Me Studios home"><span class="wordmark__signal" aria-hidden="true"></span><span>You Know Its Me <b>Studios</b></span></a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-toggle__label">Menu</span><span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span></button>
-<nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
-<a href="./#projects">Projects</a><a href="./strata/">Strata</a><a href="./bodyhub/">Body Hub</a>
-</nav></div></header>
+    <header class="site-header"><div class="shell site-header__inner">
+<a class="wordmark" href="./" aria-label="You Know Its Me Studios home"><img src="./assets/favicon.svg" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav class="site-nav" id="site-navigation" aria-label="Primary navigation"><a href="./#projects">Projects</a><a href="./strata/">Strata</a><a href="./bodyhub/">Body Hub</a><a href="./#about">About</a><a class="contact-link" href="mailto:youknowitsmestudios@gmail.com">Get in touch <img src="./assets/icons/arrow-right.svg" alt="" width="20" height="20"></a></nav>
+</div></header>
 
     <main id="main-content">
-      <section class="hero shell">
-        <div class="hero__copy" data-reveal>
-          <p class="eyebrow"><span>You Know Its Me Studios</span><span>Software / Interaction</span></p>
-          <h1>You know<br>it’s <em>me.</em></h1>
-          <p class="hero__lede">Focused software, interactive tools, and digital products—built with a clear point of view.</p>
-          <div class="button-row">
-            <a class="button button--primary" href="#projects">Explore our apps <span aria-hidden="true">↗</span></a>
-            <a class="button button--ghost" href="https://github.com/You-Know-Its-Me-Studios/youknowitsmestudios" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
+<section class="hero">
+  <div class="shell hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">Software for a brighter tomorrow</p>
+      <h1>Ideas into<br><em>useful realities.</em></h1>
+      <p class="hero__lede">You Know Its Me Studios is an independent software studio building thoughtful tools for a more intentional, productive and private digital life.</p>
+      <div class="button-row"><a class="button button--primary" href="#projects">Explore our projects <img src="assets/icons/arrow-right.svg" width="20" height="20" alt=""></a><a class="button button--ghost" href="#about">Learn more</a></div>
+    </div>
+    <div class="hero__art" aria-hidden="true"><img class="hero__landscape" src="assets/mountain-valley.webp" width="600" height="373" alt=""><p class="hero__annotation">Simple tools<br>Brighter days<span></span></p><ol class="hero__process"><li class="active">Build</li><li>Improve</li><li>Repeat</li></ol></div>
+  </div>
+</section>
+<section class="projects-section" id="projects" aria-labelledby="projects-title"><div class="shell">
+  <div class="section-bar"><h2 class="eyebrow" id="projects-title">Featured projects</h2><a class="small-link" href="#project-list">View all projects <img src="assets/icons/arrow-right.svg" width="20" height="20" alt=""></a></div>
+  <div class="project-grid" id="project-list">
+    <a class="project-card project-card--strata" href="strata/" aria-labelledby="strata-title">
+      <div class="project-card__copy"><p class="product-label">Strata</p><h3 id="strata-title">Strata</h3><p>An Android launcher for a calmer,<br class="desktop-break"> more intentional home screen.</p></div>
+      <p class="project-card__tags">Continuous scroll · More yours</p><span class="circle-arrow"><img src="assets/icons/arrow-right.svg" width="22" height="22" alt=""></span>
+    </a>
+    <a class="project-card project-card--bodyhub" href="bodyhub/" aria-labelledby="bodyhub-title">
+      <img class="product-icon" src="assets/bodyhub-icon.svg" width="94" height="94" alt="">
+      <div class="project-card__copy"><p class="product-label">Body Hub</p><h3 id="bodyhub-title">Body Hub</h3><p>Your health data, in your hands.<br>Record, reflect and see your progress.</p></div>
+      <img class="project-card__screen" src="assets/bodyhub-today.webp" width="720" height="1280" alt="Body Hub Today screen with movement, activity and daily records">
+      <p class="project-card__tags">Record · Reflect · Built for you</p><span class="circle-arrow"><img src="assets/icons/arrow-right.svg" width="22" height="22" alt=""></span>
+    </a>
+  </div>
+</div></section>
+<section class="principles-section" id="about" aria-labelledby="principles-title"><div class="shell">
+  <div class="section-bar"><h2 class="eyebrow" id="principles-title">Our principles</h2><p class="section-note">Better software. Brighter lives.</p></div>
+  <div class="principles">
+    <article><img src="assets/icons/bolt.svg" width="30" height="30" alt=""><div><h3>Purposeful</h3><p>We build tools that solve real problems and make life better.</p></div></article>
+    <article><img src="assets/icons/shield-check.svg" width="30" height="30" alt=""><div><h3>Private by design</h3><p>Thoughtful data choices.<br>Clear controls in your hands.</p></div></article>
+    <article><img src="assets/icons/users.svg" width="30" height="30" alt=""><div><h3>Human centered</h3><p>Thoughtful design for real people, not just power users.</p></div></article>
+    <article><img src="assets/icons/cube.svg" width="30" height="30" alt=""><div><h3>Sustainable</h3><p>We build for the long term — in products and in principles.</p></div></article>
+  </div>
+</div></section>
+</main>
 
-        <div class="hero__graphic" aria-hidden="true" data-reveal>
-          <div class="signal-field">
-            <div class="signal-field__index">YK / IMS</div>
-            <div class="signal-field__core">
-              <span class="signal-field__axis"></span>
-              <span class="signal-field__orbit signal-field__orbit--one"></span>
-              <span class="signal-field__orbit signal-field__orbit--two"></span>
-              <span class="signal-field__point"></span>
-              <strong>01</strong>
-            </div>
-            <div class="signal-field__meta">
-              <span>Software</span>
-              <span>Interaction</span>
-              <span>Systems</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="ticker" aria-label="Studio disciplines">
-        <div class="ticker__track">
-          <span>SOFTWARE</span><i></i><span>INTERACTION</span><i></i><span>TOOLS</span><i></i><span>DIGITAL PRODUCTS</span><i></i><span>SOFTWARE</span>
-        </div>
-      </section>
-
-      <section class="section shell" id="projects">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Our apps / 02</p>
-          <h2>Tools for your day.<br><span>Made with intention.</span></h2>
-        </div>
-
-        <article class="product-card" data-reveal>
-          <div class="product-card__content">
-            <div class="product-card__topline">
-              <span class="status"><i aria-hidden="true"></i> Coming soon to Google Play</span>
-              <span class="mono">Android launcher</span>
-            </div>
-            <div class="product-card__body">
-              <p class="product-card__number">01</p>
-              <div>
-                <h3>Strata</h3>
-                <p>A customizable Android launcher that replaces disconnected pages with one continuous surface. Find apps visually, shape your Glance Deck, and move fast with a right-edge navigation rail.</p>
-              </div>
-            </div>
-            <ul class="tag-list" aria-label="Strata highlights">
-              <li>Continuous scroll</li>
-              <li>Favorites + groups</li>
-              <li>Glance Deck</li>
-              <li>Themes</li>
-            </ul>
-            <a class="text-link" href="./strata/">See how Strata works <span aria-hidden="true">↗</span></a>
-          </div>
-
-          <div class="product-card__visual" aria-label="Strata product visual placeholder">
-            <div class="surface-map">
-              <p class="surface-map__label">ONE CONTINUOUS SURFACE</p>
-              <div class="surface-map__line surface-map__line--a"></div>
-              <div class="surface-map__line surface-map__line--b"></div>
-              <div class="surface-map__line surface-map__line--c"></div>
-              <div class="surface-map__marker surface-map__marker--a"><span>A</span> Favorites</div>
-              <div class="surface-map__marker surface-map__marker--b"><span>B</span> Groups</div>
-              <div class="surface-map__marker surface-map__marker--c"><span>C</span> Glance</div>
-              <div class="surface-map__rail">
-                <span>A</span><span>F</span><span>K</span><span>P</span><span>U</span><span>Z</span>
-              </div>
-              <p class="surface-map__note">Product imagery reserved for release assets</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card bodyhub-card" data-reveal>
-          <div class="product-card__content">
-            <div class="product-card__topline">
-              <span class="status"><i aria-hidden="true"></i> In development</span>
-              <span class="mono">Android · Fitness &amp; wellness</span>
-            </div>
-            <div class="product-card__body">
-              <p class="product-card__number">02</p>
-              <div>
-                <h3>Body Hub</h3>
-                <p>A place to record and review your fitness and general-wellness information. Find clear guidance on your data, app permissions, and support.</p>
-              </div>
-            </div>
-            <ul class="tag-list" aria-label="Body Hub highlights">
-              <li>Fitness records</li><li>General wellness</li><li>Data controls</li>
-            </ul>
-            <a class="text-link" href="./bodyhub/">Explore Body Hub <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="bodyhub-card__resources">
-            <p class="eyebrow">Body Hub / Resources</p>
-            <h4>Your information.<br>Your choices.</h4>
-            <p>Understand the app, get help, and manage your data.</p>
-            <a href="./bodyhub/support.html">Support <span aria-hidden="true">↗</span></a>
-            <a href="./bodyhub/privacy.html">Privacy Policy <span aria-hidden="true">↗</span></a>
-            <a href="./bodyhub/terms.html">Terms of Use <span aria-hidden="true">↗</span></a>
-            <a href="./bodyhub/data-deletion.html">Your Data &amp; Deletion <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-      </section>
-
-      <section class="section section--studio shell">
-        <div class="studio-intro" data-reveal>
-          <p class="eyebrow">Studio direction</p>
-          <h2>Built to feel<br><span>considered.</span></h2>
-          <p>You Know Its Me Studios develops software and interactive products where structure, motion, and utility work as one system.</p>
-        </div>
-
-        <div class="principles" data-reveal>
-          <article>
-            <span class="principles__index">01</span>
-            <h3>Useful by design</h3>
-            <p>Every interaction should earn its place.</p>
-          </article>
-          <article>
-            <span class="principles__index">02</span>
-            <h3>Distinct in use</h3>
-            <p>Familiar enough to learn. Specific enough to remember.</p>
-          </article>
-          <article>
-            <span class="principles__index">03</span>
-            <h3>Made as a system</h3>
-            <p>Products that can adapt without losing their identity.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="project-index shell" aria-labelledby="project-index-title" data-reveal>
-        <div>
-          <p class="eyebrow">Project index</p>
-          <h2 id="project-index-title">The work, as it grows.</h2>
-        </div>
-        <a class="project-row" href="./strata/">
-          <span class="project-row__index">01</span>
-          <span class="project-row__name">Strata</span>
-          <span class="project-row__type">Android launcher</span>
-          <span class="project-row__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="project-row" href="./bodyhub/">
-          <span class="project-row__index">02</span>
-          <span class="project-row__name">Body Hub</span>
-          <span class="project-row__type">Fitness &amp; wellness</span>
-          <span class="project-row__arrow" aria-hidden="true">↗</span>
-        </a>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-<div class="shell site-footer__top">
-<p class="site-footer__statement">Software with<br>a point of view.</p>
-<div class="site-footer__links">
-<div><p>Studio</p><a href="./">You Know Its Me Studios</a><a href="./#projects">All apps</a><a href="https://github.com/You-Know-Its-Me-Studios/youknowitsmestudios" target="_blank" rel="noreferrer">GitHub</a></div>
-<div><p>Strata</p><a href="./strata/">Product</a><a href="./support/strata/">Support</a><a href="./privacy/strata/">Privacy</a></div>
-<div><p>Body Hub</p><a href="./bodyhub/">Product</a><a href="./bodyhub/support.html">Support</a><a href="./bodyhub/privacy.html">Privacy</a><a href="./bodyhub/terms.html">Terms</a><a href="./bodyhub/data-deletion.html">Data &amp; Deletion</a></div>
-</div></div>
-<div class="shell site-footer__bottom"><p>© <span data-current-year>2026</span> You Know Its Me Studios</p><a href="#main-content">Back to top <span aria-hidden="true">↑</span></a></div>
-</footer>
+    <footer class="site-footer"><div class="shell footer-main">
+<a class="wordmark" href="./" aria-label="You Know Its Me Studios home"><img src="./assets/favicon.svg" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>
+<nav aria-label="Footer navigation"><a href="./#projects">Projects</a><a href="./strata/">Strata</a><a href="./bodyhub/">Body Hub</a><a href="./#about">About</a><a href="mailto:youknowitsmestudios@gmail.com">Contact</a></nav>
+<div class="footer-social"><a href="https://github.com/You-Know-Its-Me-Studios/youknowitsmestudios" aria-label="Studio on GitHub"><img src="./assets/icons/brand-github.svg" alt="" width="20" height="20"></a><a href="mailto:youknowitsmestudios@gmail.com" aria-label="Email the studio"><img src="./assets/icons/mail.svg" alt="" width="20" height="20"></a></div>
+<p class="footer-motto">Small ideas<br>Bigger tomorrows</p>
+</div><div class="shell footer-resources"><p>© <span data-current-year>2026</span> You Know Its Me Studios</p><nav aria-label="Support and legal"><a href="./support/strata/">Strata support</a><a href="./privacy/strata/">Strata privacy</a><a href="./bodyhub/support.html">Body Hub support</a><a href="./bodyhub/privacy.html">Privacy</a><a href="./bodyhub/terms.html">Terms</a><a href="./bodyhub/data-deletion.html">Data &amp; deletion</a></nav></div></footer>
   </body>
 </html>
