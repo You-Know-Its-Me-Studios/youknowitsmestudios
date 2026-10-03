@@ -23,7 +23,7 @@ def footer(base):
 <nav aria-label="Footer navigation"><a href="{base}#projects">Projects</a><a href="{base}strata/">Strata</a><a href="{base}bodyhub/">Body Hub</a><a href="{base}#about">About</a><a href="{EMAIL}">Contact</a></nav>
 <div class="footer-social"><a href="https://github.com/You-Know-Its-Me-Studios/youknowitsmestudios" aria-label="Studio on GitHub"><img src="{base}assets/icons/brand-github.svg" alt="" width="20" height="20"></a><a href="{EMAIL}" aria-label="Email the studio"><img src="{base}assets/icons/mail.svg" alt="" width="20" height="20"></a></div>
 <p class="footer-motto">Small ideas<br>Bigger tomorrows</p>
-</div><div class="shell footer-resources"><p>© <span data-current-year>2026</span> You Know Its Me Studios</p><nav aria-label="Support and legal"><a href="{base}support/strata/">Strata support</a><a href="{base}privacy/strata/">Strata privacy</a><a href="{base}bodyhub/support.html">Body Hub support</a><a href="{base}bodyhub/privacy.html">Privacy</a><a href="{base}bodyhub/terms.html">Terms</a><a href="{base}bodyhub/data-deletion.html">Data &amp; deletion</a></nav></div></footer>'''
+</div><div class="shell footer-resources"><p>© <span data-current-year>2026</span> You Know Its Me Studios</p><nav aria-label="Support and legal"><a href="{base}support/strata/">Strata support</a><a href="{base}privacy/strata/">Strata privacy policy</a><a href="{base}bodyhub/support.html">Body Hub support</a><a href="{base}bodyhub/privacy.html">Body Hub privacy policy</a><a href="{base}bodyhub/terms.html">Body Hub terms of use</a><a href="{base}bodyhub/data-deletion.html">Body Hub data &amp; deletion</a></nav></div></footer>'''
 
 def sync():
     for page in ROOT.rglob('*.html'):
