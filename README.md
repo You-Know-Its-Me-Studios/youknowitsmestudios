@@ -16,6 +16,8 @@ Open `http://127.0.0.1:4173/youknowitsmestudios/`. Serving the parent directory 
 ## Maintenance
 
 - `index.html`: studio homepage.
+- `about/index.html`: studio background, products and principles, based on existing published copy.
+- `support/index.html`, `support/support.js`: shared support form and product preselection. Use `support/?product=bodyhub` or `support/?product=strata` for product contact links.
 - `strata/index.html`, `bodyhub/index.html`: product presentations.
 - `support/strata/`, `privacy/strata/`, and the four Body Hub resource pages retain their public routes and original substantive content.
 - `styles.css`: shared tokens, layouts, controls and responsive styles.
@@ -25,6 +27,20 @@ Open `http://127.0.0.1:4173/youknowitsmestudios/`. Serving the parent directory 
 - `design-qa.md`: verification status and outstanding checks.
 
 The homepage verification meta tag, `.nojekyll`, and existing deployment configuration are preserved. All website assets and internal links are relative to support GitHub Pages project paths.
+
+## Support form status
+
+Online submission is intentionally unavailable, at the owner's direction. No form service, backend, service account or credentials have been created. The form visibly explains that it cannot deliver messages, its submit button is disabled, and its script prevents submission without sending or saving entered data. It does not show a submitting or success state because there is no delivery service.
+
+The existing public contact address remains `youknowitsmestudios@gmail.com`. Company and contact details remain in the policies. All contact actions lead to the new form; the old product help pages and their section anchors remain available for troubleshooting and content ratings.
+
+Enabling delivery later requires an explicitly approved service connected to that mailbox, provider spam protection, server-side validation, appropriate privacy disclosures, real submission/error handling and a verified end-to-end delivery check. Adding an endpoint alone is not sufficient. Never put private credentials in this static site.
+
+## Checks and publishing
+
+There is no package build. Refresh shared HTML with `python tools/sync_chrome.py`, then run `python tools/check_site.py` and `node --check support/support.js`. The link check covers every HTML page, local asset and fragment under `/youknowitsmestudios/`.
+
+GitHub Pages publishes the root of `main` using the repository's existing **pages build and deployment** workflow. Do not move hosting or remove `.nojekyll`. `bodyhub/foreground-health-demo.mp4` is the existing public review video and must remain available.
 
 ## Content follow-up
 

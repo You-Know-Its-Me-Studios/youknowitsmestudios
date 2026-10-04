@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Support and contact information for You Know Its Me Studios, Body Hub and Strata.">
+    <meta name="theme-color" content="#080e12">
+    <meta property="og:title" content="Support | You Know Its Me Studios">
+    <meta property="og:description" content="Get help with Body Hub, Strata or a general studio question.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://you-know-its-me-studios.github.io/youknowitsmestudios/support/">
+    <title>Support | You Know Its Me Studios</title>
+    <link rel="icon" href="../assets/studio-logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css?v=20261004-1">
+    <script src="../script.js?v=20261003-4" defer></script>
+    <script src="./support.js?v=20261004-1" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header"><div class="shell site-header__inner">
+<a class="wordmark" href="../" aria-label="You Know Its Me Studios home"><img src="../assets/studio-logo.png" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav class="site-nav" id="site-navigation" aria-label="Primary navigation"><a href="../#projects">Projects</a><a href="../strata/">Strata</a><a href="../bodyhub/">Body Hub</a><a href="../about/">About</a><a class="contact-link" href="../support/">Get in touch <img src="../assets/icons/arrow-right.svg" alt="" width="20" height="20"></a></nav>
+</div></header>
+    <main id="main-content">
+      <section class="page-hero shell">
+        <p class="eyebrow">Support / Contact</p>
+        <div class="page-hero__grid">
+          <h1>A little help.<br><span>A clearer path.</span></h1>
+          <div><p>Questions about Body Hub, Strata or the studio? Choose a product below. For an app issue, include your app version, Android version, device model and what happened.</p></div>
+        </div>
+      </section>
+      <div class="contact-layout shell">
+        <section aria-labelledby="form-title">
+          <h2 id="form-title">Contact the studio</h2>
+          <div class="callout form-notice" id="delivery-notice">
+            <p><strong>Online sending is not available yet.</strong> This form cannot deliver messages. For now, you can write to <span class="contact-address">youknowitsmestudios@gmail.com</span> using your preferred email service.</p>
+          </div>
+          <!-- Sending is deliberately disabled: no form service or backend is configured. -->
+          <form id="support-form" method="post" aria-describedby="delivery-notice form-privacy">
+            <p class="form-help">Reply email and message are required when sending becomes available.</p>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="support-name">Name <span>(optional)</span></label>
+                <input id="support-name" name="name" autocomplete="name" maxlength="120">
+              </div>
+              <div class="form-field">
+                <label for="support-email">Reply email <span>(required)</span></label>
+                <input id="support-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required aria-describedby="email-error">
+                <p class="field-error" id="email-error" aria-live="polite"></p>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="support-product">Product</label>
+              <select id="support-product" name="product">
+                <option value="general">General</option>
+                <option value="bodyhub">Body Hub</option>
+                <option value="strata">Strata</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="support-subject">Subject <span>(optional)</span></label>
+              <input id="support-subject" name="subject" maxlength="200">
+            </div>
+            <div class="form-field">
+              <label for="support-message">Message <span>(required)</span></label>
+              <textarea id="support-message" name="message" rows="8" maxlength="10000" required aria-describedby="message-hint message-error"></textarea>
+              <p class="form-help" id="message-hint">Please avoid passwords, payment details and unnecessary health records or other sensitive information. Maximum 10,000 characters.</p>
+              <p class="field-error" id="message-error" aria-live="polite"></p>
+            </div>
+            <p class="form-help" id="form-privacy">Nothing entered here is sent or saved by this website. Copy any draft you want to keep before leaving this page.</p>
+            <button class="button button--primary" type="submit" disabled aria-describedby="delivery-notice">Submit — currently unavailable</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+          </form>
+          <noscript><p class="form-help">Online sending is unavailable. You can choose your product manually and use the contact address above.</p></noscript>
+        </section>
+        <aside class="contact-help" aria-labelledby="help-title">
+          <p class="eyebrow">Help &amp; information</p>
+          <h2 id="help-title">Start here.</h2>
+          <p>Existing help pages may answer your question while online sending is unavailable.</p>
+          <nav class="help-links" aria-label="Product help">
+            <a href="../bodyhub/support.html#contact">Body Hub troubleshooting &amp; ratings</a>
+            <a href="./strata/#main-content">Strata troubleshooting</a>
+            <a href="../bodyhub/data-deletion.html">Body Hub data &amp; deletion</a>
+            <a href="../bodyhub/privacy.html">Body Hub privacy policy</a>
+            <a href="../privacy/strata/">Studio &amp; Strata privacy policy</a>
+          </nav>
+          <p class="form-help">Body Hub support cannot access or erase records held only on your phone. Body Hub is not an emergency or medical-advice service.</p>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="shell footer-main">
+<a class="wordmark" href="../" aria-label="You Know Its Me Studios home"><img src="../assets/studio-logo.png" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>
+<nav aria-label="Footer navigation"><a href="../#projects">Projects</a><a href="../strata/">Strata</a><a href="../bodyhub/">Body Hub</a><a href="../about/">About</a><a href="../support/">Contact</a></nav>
+<div class="footer-social"><a href="https://github.com/You-Know-Its-Me-Studios/youknowitsmestudios" aria-label="Studio on GitHub"><img src="../assets/icons/brand-github.svg" alt="" width="20" height="20"></a><a href="../support/" aria-label="Contact the studio through the support form"><img src="../assets/icons/mail.svg" alt="" width="20" height="20"></a></div>
+<p class="footer-motto">Small ideas<br>Bigger tomorrows</p>
+</div><div class="shell footer-resources"><p>© <span data-current-year>2026</span> You Know Its Me Studios</p><nav aria-label="Support and legal"><a href="../support/?product=strata">Strata support</a><a href="../privacy/strata/">Strata privacy policy</a><a href="../support/?product=bodyhub">Body Hub support</a><a href="../bodyhub/privacy.html">Body Hub privacy policy</a><a href="../bodyhub/terms.html">Body Hub terms of use</a><a href="../bodyhub/data-deletion.html">Body Hub data &amp; deletion</a></nav></div></footer>
+  </body>
+</html>
