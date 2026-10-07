@@ -85,9 +85,9 @@ def check():
                 if target.path != urlsplit(BASE).path + 'support/':
                     errors.append(f'{route}: contact action must open the form: {label}')
             if target.path == urlsplit(BASE).path + 'support/':
-                expected = 'bodyhub' if 'body hub' in label else 'strata' if 'strata' in label else None
+                expected = next((name for name, title in (('bodyhub', 'body hub'), ('strata', 'strata'), ('nadir', 'nadir')) if title in label), None)
                 if expected is None and label in ('contact', 'get in touch', 'contact the studio through the support form'):
-                    expected = 'bodyhub' if route.startswith('bodyhub/') else 'strata' if '/strata/' in '/' + route else None
+                    expected = next((name for name in ('bodyhub', 'strata', 'nadir') if f'/{name}/' in '/' + route), None)
                 if expected and target.query != f'product={expected}':
                     errors.append(f'{route}: wrong product context for {label}')
 

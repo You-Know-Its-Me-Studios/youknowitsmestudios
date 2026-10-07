@@ -1712,6 +1712,237 @@ section[id],div[id] {
 .product-disclaimer {
   font-size:12px;
 }
+/* Three-product collection: equal cards, with room for copy and real app imagery. */
+.project-grid--three {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.project-grid--three .project-card {
+  display:block;
+  height:350px;
+  padding:26px;
+}
+.project-grid--three .product-icon {
+  position:absolute;
+  top:24px;
+  right:24px;
+  width:48px;
+  height:48px;
+  border-radius:12px;
+}
+.project-grid--three .project-card__copy {
+  max-width:none;
+}
+.project-grid--three .product-label {
+  padding-right:55px;
+  font-size:9px;
+  letter-spacing:1.6px;
+}
+.project-grid--three h3 {
+  font-size:32px;
+  margin-top:10px;
+}
+.project-grid--three .project-card__copy>p:last-child {
+  max-width:290px;
+  font-size:14px;
+  line-height:1.65;
+}
+.project-grid--three .project-card__screen {
+  width:132px;
+  right:34px;
+  top:194px;
+  opacity:.85;
+}
+.project-grid--three .project-card__tags {
+  left:26px;
+  bottom:24px;
+  max-width:155px;
+  font-size:9px;
+  line-height:1.9;
+  letter-spacing:1.4px;
+  z-index:1;
+}
+.project-card--nadir {
+  border-color:#27565e;
+  background:radial-gradient(ellipse at 95% -10%,#194b59,transparent 60%),#091722;
+}
+.project-card--nadir .project-card__screen {
+  border-color:#315a68;
+  transform:rotate(2deg);
+}
+.about-products .feature-grid--three {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+/* Nadir uses the shared product shell; its own branding stays in the content. */
+.nadir-wordmark {
+  width:180px;
+  height:auto;
+}
+.nadir-hero {
+  gap:55px;
+}
+.nadir-hero-note,.nadir-small {
+  font-size:13px;
+  line-height:1.8;
+}
+.nadir-hero-note {
+  max-width:480px;
+  margin-top:22px;
+}
+.nadir-instruments {
+  width:100%;
+  padding:0 20px;
+  text-align:center;
+  background:radial-gradient(ellipse at center,#19465360,transparent 70%);
+}
+.nadir-instruments>a {
+  display:block;
+  width:min(100%,320px);
+  margin-inline:auto;
+}
+.nadir-instruments img {
+  width:100%;
+  height:auto;
+  border:1px solid #375662;
+  border-radius:18px;
+  box-shadow:0 18px 55px #0006;
+}
+.nadir-instruments figcaption,.nadir-map-capture figcaption {
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.8;
+  margin-top:16px;
+}
+.nadir-section-intro {
+  max-width:790px;
+  font-size:16px;
+  margin:-10px 0 30px;
+}
+.nadir-story {
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  align-items:center;
+  gap:70px;
+  padding-block:55px;
+  border-block:1px solid var(--border);
+}
+.nadir-story h2,.nadir-help h2 {
+  font-size:34px;
+  letter-spacing:-1px;
+  line-height:1.25;
+  margin:18px 0 22px;
+}
+.nadir-story p+p {
+  margin-top:20px;
+}
+.nadir-data-modes {
+  margin:26px 0;
+}
+.nadir-data-modes>div {
+  border-left:2px solid #295059;
+  padding-left:20px;
+  margin-bottom:22px;
+}
+.nadir-data-modes dt {
+  color:var(--text);
+  font-weight:600;
+  margin-bottom:6px;
+}
+.nadir-data-modes dd {
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+.nadir-map-capture {
+  max-width:440px;
+  margin-inline:auto;
+}
+.nadir-map-capture>a {
+  display:block;
+  border:1px solid #375662;
+  border-radius:10px;
+  overflow:hidden;
+}
+.nadir-map-capture img {
+  width:100%;
+  height:auto;
+}
+.nadir-map-capture a,.nadir-help a {
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.nadir-story--text {
+  align-items:start;
+}
+.nadir-deep-dive {
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:30px;
+}
+.nadir-deep-dive h3 {
+  font-size:28px;
+  margin:18px 0;
+}
+.nadir-deep-dive .check-list {
+  font-size:14px;
+  padding-left:18px;
+}
+.nadir-help {
+  padding-block:35px 55px;
+}
+.nadir-help details {
+  border-top:1px solid var(--border);
+  padding-block:18px;
+}
+.nadir-help summary {
+  cursor:pointer;
+  color:var(--text);
+  font-weight:600;
+  padding-block:6px;
+}
+.nadir-help details p {
+  max-width:850px;
+  margin:14px 0 0;
+}
+@media(min-width:1001px) and (max-width:1200px) {
+  .site-header__inner { gap:15px; }
+  .site-header .wordmark { font-size:10px; letter-spacing:1.2px; gap:10px; }
+  .site-nav { gap:16px; font-size:12px; }
+  .site-nav .contact-link { gap:10px; margin-left:0; padding:8px 14px; }
+}
+@media(min-width:651px) and (max-width:1200px) {
+  .project-grid--three { grid-template-columns:1fr; }
+  .project-grid--three .project-card { height:230px; }
+  .project-grid--three .project-card__copy { max-width:60%; }
+  .project-grid--three .product-icon { right:210px; top:36px; }
+  .project-grid--three .project-card__screen { top:30px; right:50px; width:130px; }
+  .project-grid--three .project-card__tags { max-width:60%; }
+  .project-grid--three .product-label { padding-right:0; }
+  .project-grid--three .project-card__copy>p:last-child { max-width:320px; }
+  .nadir-hero { gap:25px; }
+  .nadir-story { gap:35px; }
+}
+@media(max-width:850px) {
+  .nadir-hero { grid-template-columns:1fr; gap:35px; }
+  .nadir-hero .product-hero__copy { max-width:620px; }
+  .nadir-story { grid-template-columns:1fr; gap:30px; }
+  .nadir-map-capture { width:100%; }
+  .about-products .feature-grid--three { grid-template-columns:1fr; gap:20px; }
+}
+@media(max-width:650px) {
+  .project-grid--three { grid-template-columns:1fr; }
+  .project-grid--three .project-card { height:330px; padding:23px 20px; }
+  .project-grid--three .product-icon { width:42px; height:42px; right:20px; }
+  .project-grid--three .product-label { font-size:8px; letter-spacing:1.2px; }
+  .project-grid--three .project-card__copy>p:last-child { font-size:13px; }
+  .project-grid--three .project-card__tags { left:20px; max-width:min(125px,calc(100% - 175px)); }
+  .project-grid--three .project-card__screen { top:190px; right:30px; width:115px; }
+  .nadir-instruments { padding:0; }
+  .nadir-story { padding-block:35px; }
+  .nadir-story h2,.nadir-help h2 { font-size:29px; }
+  .nadir-deep-dive { padding:24px; }
+  .nadir-help { padding-block:20px 35px; }
+}
 @media(max-width:650px) {
   .strata-overview {
     padding:28px;

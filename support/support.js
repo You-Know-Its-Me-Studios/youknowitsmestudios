@@ -4,7 +4,7 @@
 
   const product = form.elements.product;
   const requestedProduct = new URLSearchParams(window.location.search).get("product");
-  if (["general", "bodyhub", "strata"].includes(requestedProduct)) {
+  if (["general", "bodyhub", "strata", "nadir"].includes(requestedProduct)) {
     product.value = requestedProduct;
   }
 

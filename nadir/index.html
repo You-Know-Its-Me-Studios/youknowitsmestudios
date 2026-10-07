@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nadir is an offline-first Android passenger flight companion. Understand live GPS and sensor readings, use offline maps and keep your actual recorded flight path.">
+    <meta name="theme-color" content="#080e12">
+    <meta property="og:title" content="Nadir | You Know Its Me Studios">
+    <meta property="og:description" content="Your flight, with or without Wi-Fi. Phone-based instruments, offline maps and actual recorded routes. In development for Android.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://you-know-its-me-studios.github.io/youknowitsmestudios/nadir/">
+    <title>Nadir | You Know Its Me Studios</title>
+    <link rel="icon" href="../assets/studio-logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css?v=20261007-1">
+    <script src="../script.js?v=20261003-4" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header"><div class="shell site-header__inner">
+<a class="wordmark" href="../" aria-label="You Know Its Me Studios home"><img src="../assets/studio-logo.png" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav class="site-nav" id="site-navigation" aria-label="Primary navigation"><a href="../#projects">Projects</a><a href="../strata/">Strata</a><a href="../bodyhub/">Body Hub</a><a href="../nadir/" aria-current="page">Nadir</a><a href="../about/">About</a><a class="contact-link" href="../support/?product=nadir">Get in touch <img src="../assets/icons/arrow-right.svg" alt="" width="20" height="20"></a></nav>
+</div></header>
+    <main id="main-content">
+      <section class="product-hero nadir-hero shell">
+        <div class="product-hero__copy">
+          <div class="product-heading"><img class="product-icon" src="../assets/nadir/icon.svg" width="55" height="55" alt=""><img class="nadir-wordmark" src="../assets/nadir/wordmark.svg" width="180" height="47" alt="Nadir"></div>
+          <p class="availability">Android · In development</p>
+          <h1>Your flight.<br><em>A clearer picture.</em></h1>
+          <p class="product-hero__lede">A passenger flight companion that uses your phone's GPS and sensors to help you understand the journey. Follow your actual flight, explore offline maps and keep a record of the trip — even without aircraft Wi-Fi.</p>
+          <div class="button-row"><a class="button button--primary" href="#inside-nadir">Explore Nadir</a><a class="button button--ghost" href="../support/?product=nadir">Get Nadir support</a></div>
+          <p class="nadir-hero-note">Built for the view from your seat. Readings depend on your phone's sensors and satellite reception.</p>
+        </div>
+        <figure class="nadir-instruments">
+          <a href="../assets/nadir/instruments.webp" aria-label="View the full Nadir Instruments screenshot"><img src="../assets/nadir/instruments.webp" width="720" height="1560" fetchpriority="high" alt="Nadir Instruments on Android, showing ground speed, MSL altitude, vertical speed, cabin pressure and GNSS satellite counts"></a>
+          <figcaption>Actual app capture · Instruments on the ground</figcaption>
+        </figure>
+      </section>
+      <section class="product-summary" aria-label="Nadir highlights"><div class="shell"><span>Live instruments</span><span>Offline maps</span><span>Recorded GPS track</span><span>Weather context</span><span>Flight history</span></div></section>
+
+      <section class="product-details shell" id="inside-nadir" aria-labelledby="instruments-title">
+        <p class="eyebrow">01 / Live flight</p>
+        <h2 id="instruments-title">Start with the things you want to know.</h2>
+        <p class="nadir-section-intro">How fast are we moving? How high are we? What is changing around us? Nadir brings the phone's readings together in a clear instrument view, with more context a tap away.</p>
+        <div class="feature-grid">
+          <article class="feature-card"><p class="product-label">Position &amp; movement</p><h3>Follow the flight.</h3><p>Read ground speed, GPS direction of travel, altitude and vertical speed. Altitude uses mean sea level when available and identifies its reference when it cannot.</p></article>
+          <article class="feature-card"><p class="product-label">Inside the cabin</p><h3>See the pressure change.</h3><p>On phones with a barometer, view cabin pressure, its trend and estimated cabin altitude. Cabin altitude describes pressure inside the cabin; it is different from the aircraft's height.</p></article>
+          <article class="feature-card"><p class="product-label">Signal &amp; attitude</p><h3>Know what your phone can see.</h3><p>Check GNSS signal quality and satellites used in the fix. A sensor-based attitude indicator can be calibrated to the current surface, such as a tray table. Moving the phone changes that reference.</p></article>
+        </div>
+      </section>
+
+      <section class="nadir-story shell" id="offline" aria-labelledby="offline-title">
+        <div class="nadir-story__copy">
+          <p class="eyebrow">02 / Offline first</p>
+          <h2 id="offline-title">The connection can go.<br>The journey keeps going.</h2>
+          <p>Nadir's core runs on the phone. A usable GPS fix can still provide live movement and position without internet, while stored maps and geographic data give the journey context.</p>
+          <dl class="nadir-data-modes">
+            <div><dt>Already on your phone</dt><dd>A world overview, airport and geographic data, local time zones and daylight calculations. Saved flights and recorded tracks remain available offline.</dd></div>
+            <div><dt>Prepared before you fly</dt><dd>Download route corridors, detailed departure and arrival areas, or regional packs. Map storage shows what is ready; automatic preparation follows your connection preferences.</dd></div>
+            <div><dt>Fresh when connected</dt><dd>New weather reports, imagery and aircraft-network information need internet. Previously retrieved reports and image areas can remain cached, with their age and coverage limits visible.</dd></div>
+          </dl>
+          <p class="nadir-small">GPS reception inside an aircraft varies. Missing satellite reception can interrupt readings and leave gaps in a recorded route; internet access does not guarantee a GPS fix.</p>
+        </div>
+        <figure class="nadir-map-capture">
+          <a href="../assets/nadir/offline-map.webp" aria-label="View the larger Nadir offline map detail"><img src="../assets/nadir/offline-map.webp" width="900" height="1025" loading="lazy" decoding="async" alt="Detail from Nadir's offline world map showing coastal geography and airports around Georgia and northeastern Florida"></a>
+          <figcaption>Offline world overview · Cropped from the app<br>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> · <a href="https://protomaps.com/">Protomaps</a> · © <a href="https://openmaptiles.org/">OpenMapTiles</a> · <a href="https://openfreemap.org/">OpenFreeMap</a></figcaption>
+        </figure>
+      </section>
+
+      <section class="product-details shell" id="recorded-flight" aria-labelledby="track-title">
+        <p class="eyebrow">03 / Follow the actual flight</p>
+        <h2 id="track-title">Keep the route you really took.</h2>
+        <p class="nadir-section-intro">Nadir records the positions your phone actually observes: departure turns, changes of course and the approach to your destination. That trace stays with the completed flight.</p>
+        <div class="feature-grid">
+          <article class="feature-card"><p class="product-label">Recorded path</p><h3>A trace of the real route.</h3><p>The recorded GPS track is separate from the airport-to-airport reference line. Color follows reliable recorded MSL altitude; unavailable or uncertain altitude stays neutral.</p></article>
+          <article class="feature-card"><p class="product-label">Progress &amp; perspective</p><h3>See how the journey is unfolding.</h3><p>Check reference-route progress, distance flown and destination estimates. The reference is a geographic guide, not an airline's filed flight plan; arrival estimates depend on current observations.</p></article>
+          <article class="feature-card"><p class="product-label">Record your way</p><h3>Start manually, or detect a flight.</h3><p>Manual recording works without selecting airports. With automatic detection enabled, keep the app open until takeoff is confirmed. Recording can then continue in the background, and completed automatic flights wait for your review.</p></article>
+        </div>
+      </section>
+
+      <section class="nadir-story nadir-story--text shell" id="context" aria-labelledby="context-title">
+        <div class="nadir-story__copy"><p class="eyebrow">04 / Weather &amp; aviation context</p><h2 id="context-title">Look beyond the flight numbers.</h2><p>Explore nearby airports, local and destination time, and sunrise and sunset estimates. Add precipitation, satellite cloud imagery, weather advisories and pilot reports when the relevant data is available.</p><p>AviationWeather.gov supplies aviation reports; LibreWXR supplies weather imagery. Optional ADSB.lol aircraft information stays distinct from your phone's own measurements.</p><p class="nadir-small">Weather coverage varies. Cached images describe previously retrieved areas and times, and the precipitation outlook is experimental. Missing reports do not mean clear conditions.</p></div>
+        <div class="nadir-deep-dive"><p class="eyebrow">Deeper when you want it</p><h3>Business up front.<br>Party in the back.</h3><p>Keep the everyday view simple, then open the details that interest you:</p><ul class="check-list"><li>Individual GNSS satellites, constellations and signal strength</li><li>Raw METAR/TAF weather reports, SIGMET advisories and PIREPs</li><li>Airport runways, frequencies and radio navigation aids where listed</li><li>Distances, bearings and route geometry</li><li>Sovereign airspace as an educational geographic reference</li></ul><p class="nadir-small">These are passenger and enthusiast tools. The airspace layer is not a legal boundary determination or an air traffic control map.</p></div>
+      </section>
+
+      <section class="product-details shell" id="history" aria-labelledby="history-title">
+        <p class="eyebrow">05 / After landing</p>
+        <h2 id="history-title">The trip ends. The record stays.</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><p class="product-label">Flight history</p><h3>Return to the journey.</h3><p>Reopen completed flights with their actual route maps, observed phases, milestones and statistics. History is stored on the phone and stays available without a connection.</p></article>
+          <article class="feature-card"><p class="product-label">Live &amp; completed trends</p><h3>Inspect a moment in time.</h3><p>Explore altitude, speed, vertical speed, pressure, cabin altitude and GPS turns. Hold and drag through recorded samples or use the accessible slider to inspect a specific moment.</p></article>
+          <article class="feature-card"><p class="product-label">Your records</p><h3>Take the data with you.</h3><p>Export a completed flight as JSON, CSV or GPX to a destination you choose. Exports can contain precise locations and timestamps, so share them thoughtfully.</p></article>
+        </div>
+      </section>
+
+      <section class="nadir-help shell" id="help" aria-labelledby="help-title">
+        <p class="eyebrow">Before you fly</p><h2 id="help-title">A few useful things to know.</h2>
+        <details><summary>What should I prepare for offline use?</summary><p>Open Settings → Offline Maps, prepare the regions or route you need and check that the downloads are ready before leaving your connection. The bundled overview works without those detail packs. Weather images are cached only for retrieved coverage, not for every place you might fly over.</p></details>
+        <details><summary>Why might a reading be missing?</summary><p>Grant location permission and check GNSS status. The cabin, your seat and the phone's antenna affect reception. Some phones have no barometer or suitable attitude sensors. Nadir shows unavailable or uncertain data rather than treating it as a valid reading. Follow your airline's device instructions.</p></details>
+        <details><summary>How do I manage saved flights and maps?</summary><p>Open Flights to review, export or delete completed recordings. Manage downloaded maps separately in Settings → Offline Maps. Deleting a map pack does not delete flight history, and deleting a flight does not remove copies you have exported. Read <a href="privacy.html">Nadir privacy &amp; data</a> for more detail.</p></details>
+      </section>
+
+      <section class="product-resources shell" id="availability">
+        <div><p class="eyebrow">Android / In development</p><h2>Built for passengers.<br>Still taking shape.</h2></div>
+        <div><p>Nadir is in development for Android. Public release information will appear here when it is available.</p><p class="product-disclaimer">Nadir is informational, not certified navigation equipment. It must not replace official aviation instruments, navigation products, crew guidance or safety decisions.</p><nav class="inline-links" aria-label="Nadir resources"><a href="../support/?product=nadir">Nadir support</a><a href="privacy.html">Nadir privacy &amp; data</a><a href="../#projects">All studio products</a></nav></div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="shell footer-main">
+<a class="wordmark" href="../" aria-label="You Know Its Me Studios home"><img src="../assets/studio-logo.png" width="30" height="30" alt=""><span>You Know Its Me <b>Studios</b></span></a>
+<nav aria-label="Footer navigation"><a href="../#projects">Projects</a><a href="../strata/">Strata</a><a href="../bodyhub/">Body Hub</a><a href="../nadir/">Nadir</a><a href="../about/">About</a><a href="../support/?product=nadir">Contact</a></nav>
+<div class="footer-social"><a href="https://github.com/You-Know-Its-Me-Studios/youknowitsmestudios" aria-label="Studio on GitHub"><img src="../assets/icons/brand-github.svg" alt="" width="20" height="20"></a><a href="../support/?product=nadir" aria-label="Contact the studio through the support form"><img src="../assets/icons/mail.svg" alt="" width="20" height="20"></a></div>
+<p class="footer-motto">Small ideas<br>Bigger tomorrows</p>
+</div><div class="shell footer-resources"><p>© <span data-current-year>2026</span> You Know Its Me Studios</p><nav aria-label="Support and legal"><a href="../support/?product=strata">Strata support</a><a href="../privacy/strata/">Strata privacy policy</a><a href="../support/?product=bodyhub">Body Hub support</a><a href="../bodyhub/privacy.html">Body Hub privacy policy</a><a href="../bodyhub/terms.html">Body Hub terms of use</a><a href="../bodyhub/data-deletion.html">Body Hub data &amp; deletion</a><a href="../support/?product=nadir">Nadir support</a><a href="../nadir/privacy.html">Nadir privacy &amp; data</a></nav></div></footer>
+  </body>
+</html>

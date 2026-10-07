@@ -17,8 +17,9 @@ Open `http://127.0.0.1:4173/youknowitsmestudios/`. Serving the parent directory 
 
 - `index.html`: studio homepage.
 - `about/index.html`: studio background, products and principles, based on existing published copy.
-- `support/index.html`, `support/support.js`: shared support form and product preselection. Use `support/?product=bodyhub` or `support/?product=strata` for product contact links.
-- `strata/index.html`, `bodyhub/index.html`: product presentations.
+- `support/index.html`, `support/support.js`: shared support form and product preselection. Use `support/?product=bodyhub`, `support/?product=strata` or `support/?product=nadir` for product contact links.
+- `strata/index.html`, `bodyhub/index.html`, `nadir/index.html`: product presentations.
+- `nadir/privacy.html`: Nadir's current location, storage, export and online-provider disclosures. Product help is in `nadir/#help`.
 - `support/strata/`, `privacy/strata/`, and the four Body Hub resource pages retain their public routes and original substantive content.
 - `styles.css`: shared tokens, layouts, controls and responsive styles.
 - `script.js`: progressive mobile navigation and copyright year.
@@ -45,5 +46,9 @@ GitHub Pages publishes the root of `main` using the repository's existing **page
 ## Content follow-up
 
 Strata icon and screenshots were unavailable and omitted at the owner's direction. Its presentation uses text rather than invented app imagery. Add approved assets when available.
+
+Nadir is presented as **in development for Android**. The separate `Software Dev/Nadir` Android project was inspected on October 7, 2026: README, DATA_SOURCES, RELEASE_AUDIT, Android manifest/dependencies, location/recording/map/provider/storage implementations and current UI. No public store listing was found in those sources. Do not add pricing, a download button or a release date without a verified public release. The website includes authentic Instruments and cropped offline-map captures; no flight track or in-flight sample was invented. Source details are in `assets/README.md`. The website has no runtime dependency on the Android project, and no Android files were changed.
+
+Nadir copy distinguishes phone observations, the airport-to-airport reference route, offline maps and fresh online enrichment. Recheck the privacy notice when changing online providers, default settings, permissions, backups or storage. The existing support form remains intentionally unavailable for every product, including Nadir.
 
 Body Hub resource copy was reconciled with the 0.10 Android implementation. Personal insights, independent background preferences, optional digests and cache deletion are documented. The approved layout, navigation and removed homepage hero/menu controls are preserved. No local preview, browser session or website screenshot session was run during this copy pass.
