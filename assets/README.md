@@ -3,7 +3,8 @@
 - `mountain-valley.webp`: artwork-only crop of the owner-supplied approved mockup (`codex-clipboard-M4Ldha.png`, 1672 × 941). Crop: left 780, top 78, right 1380, bottom 451. Excludes interface text, icons and product cards. The orbital outline is part of the supplied artwork; the hero headline and annotations are HTML. WebP quality 94.
 - `favicon.svg`: legacy cyan mark, retained but no longer referenced by the website.
 - `studio-logo.png`: unchanged copy of the owner-supplied `C:/Users/Josh/Desktop/You Know Its Me Studios/Images/YKIM Studios.png`, used as the browser tab icon and studio mark in the shared header and footer. The original file remains in place.
-- `bodyhub-icon.svg`: exact path/fill conversion from `BodyHub/app/src/main/res/drawable/ic_bodyhub.xml`, without redesigning the actual app icon.
+- `bodyhub-icon.webp`: current Body Hub ribbon BH artwork from `BodyHub/app/src/main/res/drawable-nodpi/bodyhub_launcher_artwork.png`, referenced by the Android app's adaptive launcher icon. Reduced proportionally from 512 × 512 to 256 × 256 and encoded as lossless WebP. Used by the homepage product card and Body Hub product heading; no colors or artwork were changed.
+- `bodyhub-icon.svg`: legacy flat B icon, retained at its existing URL but no longer referenced by the website.
 - `bodyhub-today.webp`: `BodyHub/artifacts/play-store/review/today-overview.png`.
 - `bodyhub-workout.webp`: `BodyHub/artifacts/play-store/review/workout-edit.png`.
 - Body Hub screenshots are real captured app UI with fictional demonstration records, documented in the Android checkout's `artifacts/play-store/INDEX.md` and capture manifest. Reduced proportionally to 720 × 1280, WebP quality 94. No UI was composited or generated. The homepage card displays a partial view of the full screenshot; the product page displays full images.
