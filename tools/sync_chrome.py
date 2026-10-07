@@ -36,11 +36,15 @@ def sync():
         text = re.sub(r'<link\b[^>]*\brel="icon"[^>]*>', lambda _: f'<link rel="icon" href="{base}assets/studio-logo.png" type="image/png">', text)
         text = re.sub(r'<header class="site-header".*?</header>', lambda _: header(base, route), text, flags=re.S)
         text = re.sub(r'<footer class="site-footer".*?</footer>', lambda _: footer(base, route), text, flags=re.S)
-        text = re.sub(r'styles.css\?v=[^"\s]+', 'styles.css?v=20261007-1', text)
+        text = re.sub(r'styles.css\?v=[^"\s]+', 'styles.css?v=20261007-2', text)
         text = re.sub(r'script.js(?:\?v=[^"\s]+)?', 'script.js?v=20261003-4', text)
-        text = text.replace('content="#090b0d"', 'content="#080e12"')
-        if route.startswith('bodyhub/'):
-            text = text.replace('<body>', '<body class="theme-bodyhub">')
+        text = re.sub(r'(<meta\b[^>]*name="theme-color"\s+content=")[^"]+', r'\g<1>#0d0e10', text)
+        # Only product presentations carry a theme. About, support and policies
+        # use the neutral studio palette, even when they discuss one product.
+        text = re.sub(r'<body class="theme-(?:bodyhub|strata|nadir)">', '<body>', text)
+        product = next((name for name in ('bodyhub', 'strata', 'nadir') if route == f'{name}/index.html'), None)
+        if product:
+            text = text.replace('<body>', f'<body class="theme-{product}">')
         page.write_text(text, encoding='utf-8')
 
 if __name__ == '__main__':
